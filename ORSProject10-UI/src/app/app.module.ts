@@ -81,6 +81,8 @@ import { MaskingComponent } from './masking/masking.component';
 import { MaskinglistComponent } from './masking/maskinglist.component';
 import { DataComponent } from './data/data.component';
 import { DatalistComponent } from './data/datalist.component';
+import { AccessComponent } from './access/access.component';
+import { AccesslistComponent } from './access/accesslist.component';
 
 
 
@@ -164,6 +166,8 @@ export function myHttpLoader(http: HttpClient) {
     MaskinglistComponent,
     DataComponent,
     DatalistComponent,
+    AccessComponent,
+    AccesslistComponent,
   
  
 

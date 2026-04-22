@@ -28,10 +28,10 @@ export class EndpointServiceService {
   public HEALTH = this.SERVER_URL + "/Health";
   public LOCATION = this.SERVER_URL + "/Location";
  public PAYMENT = this.SERVER_URL + "/Payment";
-  public CREDENTIAL = this.SERVER_URL + "/Credential"
-  public MASKING = this.SERVER_URL + "/Masking"
-public DATA = this.SERVER_URL + "/Data"
-
+  public CREDENTIAL = this.SERVER_URL + "/Credential";
+  public MASKING = this.SERVER_URL + "/Masking";
+public DATA = this.SERVER_URL + "/Data";
+public ACCESS = this.SERVER_URL + "/Access";
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
 
