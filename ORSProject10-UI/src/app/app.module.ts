@@ -83,6 +83,8 @@ import { DataComponent } from './data/data.component';
 import { DatalistComponent } from './data/datalist.component';
 import { AccessComponent } from './access/access.component';
 import { AccesslistComponent } from './access/accesslist.component';
+import { FeatureComponent } from './feature/feature.component';
+import { FeaturelistComponent } from './feature/featurelist.component';
 
 
 
@@ -168,6 +170,8 @@ export function myHttpLoader(http: HttpClient) {
     DatalistComponent,
     AccessComponent,
     AccesslistComponent,
+    FeatureComponent,
+    FeaturelistComponent,
   
  
 

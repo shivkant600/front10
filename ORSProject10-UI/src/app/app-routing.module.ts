@@ -65,6 +65,8 @@ import { DataComponent } from './data/data.component';
 import { DatalistComponent } from './data/datalist.component';
 import { AccessComponent } from './access/access.component';
 import { AccesslistComponent } from './access/accesslist.component';
+import { FeatureComponent } from './feature/feature.component';
+import { FeaturelistComponent } from './feature/featurelist.component';
 
 
 const routes: Routes = [
@@ -479,6 +481,22 @@ const routes: Routes = [
         path: 'access/:id',
         component: AccessComponent
     },
+
+
+
+     {
+        path: 'feature',
+        component: FeatureComponent
+    },
+ {
+        path: 'featurelist',
+        component: FeaturelistComponent
+    },
+ {
+        path: 'feature/:id',
+        component: FeatureComponent
+    },
+
 
 
 

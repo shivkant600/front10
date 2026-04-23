@@ -32,6 +32,8 @@ export class EndpointServiceService {
   public MASKING = this.SERVER_URL + "/Masking";
 public DATA = this.SERVER_URL + "/Data";
 public ACCESS = this.SERVER_URL + "/Access";
+public FEATURE = this.SERVER_URL + "/Feature"
+
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
 
