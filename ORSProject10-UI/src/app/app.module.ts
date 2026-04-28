@@ -85,6 +85,10 @@ import { AccessComponent } from './access/access.component';
 import { AccesslistComponent } from './access/accesslist.component';
 import { FeatureComponent } from './feature/feature.component';
 import { FeaturelistComponent } from './feature/featurelist.component';
+import { PasswordComponent } from './password/password.component';
+import { PasswodlistComponent } from './password/passwodlist.component';
+import { ComplaintComponent } from './complaint/complaint.component';
+import { ComplaintlistComponent } from './complaint/complaintlist.component';
 
 
 
@@ -172,6 +176,10 @@ export function myHttpLoader(http: HttpClient) {
     AccesslistComponent,
     FeatureComponent,
     FeaturelistComponent,
+    PasswordComponent,
+    PasswodlistComponent,
+    ComplaintComponent,
+    ComplaintlistComponent,
   
  
 

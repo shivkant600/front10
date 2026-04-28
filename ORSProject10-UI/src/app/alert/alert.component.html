@@ -22,7 +22,7 @@ background-size: cover;width:auto;
         <form>
           <h2 *ngIf="!form.data.id>0" class="text-primary font-weight-bold" style="text-align: center;">{{'Add
             Alert' | translate}}</h2>
-          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold">{{'Update Alert' | translate}}</h2>
+          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold"  style="text-align: center;">{{'Update Alert' | translate}}</h2>
           <div *ngIf="form.error && form.message != null" class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             {{form.message}}
@@ -45,7 +45,7 @@ background-size: cover;width:auto;
                   placeholder="{{'Enter  alertCode' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertCode}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.alertCode}} </span>
           </div>
 
 
@@ -64,7 +64,7 @@ background-size: cover;width:auto;
                   placeholder="{{'Enter  alertType' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertType}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.alertType}} </span>
           </div>
 
 
@@ -91,7 +91,7 @@ background-size: cover;width:auto;
                   placeholder="{{'Enter Total alertTime' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertTime}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.alertTime}} </span>
           </div>
 
 
@@ -125,7 +125,7 @@ background-size: cover;width:auto;
                 </select>
               </div>
             </div>
-            <span class="alertRedColor"> {{form.inputerror.alertStatus}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.alertStatus}} </span>
           </div>
 
 

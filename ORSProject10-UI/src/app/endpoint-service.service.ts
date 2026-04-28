@@ -34,6 +34,9 @@ public DATA = this.SERVER_URL + "/Data";
 public ACCESS = this.SERVER_URL + "/Access";
 public FEATURE = this.SERVER_URL + "/Feature"
 
+public PASSWORD = this.SERVER_URL + "/Password"
+
+public COMPLAINT = this.SERVER_URL + "/Complaint"
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
 

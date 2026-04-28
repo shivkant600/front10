@@ -67,6 +67,10 @@ import { AccessComponent } from './access/access.component';
 import { AccesslistComponent } from './access/accesslist.component';
 import { FeatureComponent } from './feature/feature.component';
 import { FeaturelistComponent } from './feature/featurelist.component';
+import { PasswordComponent } from './password/password.component';
+import { PasswodlistComponent } from './password/passwodlist.component';
+import { ComplaintComponent } from './complaint/complaint.component';
+import { ComplaintlistComponent } from './complaint/complaintlist.component';
 
 
 const routes: Routes = [
@@ -498,6 +502,37 @@ const routes: Routes = [
     },
 
 
+
+
+     {
+        path: 'password',
+        component: PasswordComponent
+    },
+ {
+        path: 'passwordlist',
+        component: PasswodlistComponent
+    },
+ {
+        path: 'password/:id',
+        component: PasswordComponent
+    },
+
+
+
+
+
+     {
+        path: 'complaint',
+        component: ComplaintComponent
+    },
+ {
+        path: 'complaintlist',
+        component: ComplaintlistComponent
+    },
+ {
+        path: 'complaint/:id',
+        component: ComplaintComponent
+    },
 
 
     {
