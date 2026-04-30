@@ -21,8 +21,8 @@ background-size: cover;width:auto;
       <div class="card-body shadow-lg grad">
         <form>
           <h2 *ngIf="!form.data.id>0" class="text-primary font-weight-bold" style="text-align: center;">{{'Add
-            Complaint' | translate}}</h2>
-          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold"  style="text-align: center;">{{'Update Complaint' | translate}}</h2>
+            Device' | translate}}</h2>
+          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold"  style="text-align: center;">{{'Update Device' | translate}}</h2>
           <div *ngIf="form.error && form.message != null" class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             {{form.message}}
@@ -33,67 +33,75 @@ background-size: cover;width:auto;
           </div>
 
 
-           <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' issueType' | translate}}</b>
+          <div style="padding-top:3%">
+            <span class="pt-2"><b>{{' deviceCode' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="issueType" [(ngModel)]="form.data.issueType" class="form-control"
-                  placeholder="{{'Enter  issueType' | translate}}">
+                <input type="text" name="deviceCode" [(ngModel)]="form.data.deviceCode" class="form-control"
+                  placeholder="{{'Enter  deviceCode' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor" style=" color: red"> {{form.inputerror.issueType}} </span>
-          </div> 
-
-
-
-
-<!-- dynamic preload haiii yehhh -->
-                <!-- <div>
-            <span class="pt-2"><b>{{'complaint Name' | translate }}</b>
-              <span class="required-field"></span></span>
-            <div class="col-sm-12">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-user grey-text"></i> </div>
-                </div>
-                <select class="form-control" name="roleId" [(ngModel)]="form.data.id" aria-label="ngSelected">
-                  <option [ngValue]="" value="undefined">{{' Select complaint' | translate }}</option>
-                  <option *ngFor="let obj of form.preload.ComplaintList" [value]="obj.key">{{obj.value}}</option>
-                </select>
-              </div>
-            </div>
-            <span *ngIf="form.inputerror.id != null" class="alertRedColor" style=" color: red;"> {{'role'|
-              translate}} </span>
-
-
-
-              
-           yehhh extra codeee haiiiiii  <span class="alertRedColor"> {{form.inputerror.roleId}} </span> 
-          </div>   -->
-
-
-
-
-
-          <div style="padding-top:3%">
-            <span class="pt-2"><b>{{'createdDate' | translate}}</b>
-              <span class="required-field"></span></span>
-            <div class="col-sm-12">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-bars grey-text"></i> </div>
-                </div>
-                <input type="date" name="createdDate" [value]="form.data.createdDate | date:'yyyy-MM-dd'"
-                  (input)="form.data.createdDate=parseDate($event.target.value)" class="form-control"
-                  placeholder="{{'Enter Total createdDate' | translate}}">
-              </div>
-            </div>
-            <span class="alertRedColor" style=" color: red"> {{form.inputerror.createdDate}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.deviceCode}} </span>
           </div>
+
+
+
+
+
+           <div style="padding-top:3%">
+            <span class="pt-2"><b>{{' deviceName' | translate}}</b>
+              <span class="required-field"></span></span>
+            <div class="col-sm-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
+                </div>
+                <input type="text" name="deviceName" [(ngModel)]="form.data.deviceName" class="form-control"
+                  placeholder="{{'Enter  deviceName' | translate}}">
+              </div>
+            </div>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.deviceName}} </span>
+          </div>
+
+
+
+
+
+
+
+              <div style="padding-top:3%">
+            <span class="pt-2"><b>{{' userName' | translate}}</b>
+              <span class="required-field"></span></span>
+            <div class="col-sm-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
+                </div>
+                <input type="text" name="userName" [(ngModel)]="form.data.userName" class="form-control"
+                  placeholder="{{'Enter  userName' | translate}}">
+              </div>
+            </div>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.userName}} </span>
+          </div>
+
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,7 +114,7 @@ background-size: cover;width:auto;
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-bars grey-text"></i> </div>
                 </div>
-             
+               
 
                 <select class="form-control" name="status" [(ngModel)]="form.data.status"
                   style="cursor: pointer;">
@@ -137,7 +145,7 @@ background-size: cover;width:auto;
                 {{'Update' | translate}}</button>
             </div>
             <div class="pt-2">
-              <button (click)="forward('/complaintlist')" type="button" class="btn btn-warning mr-1">{{'List' |
+              <button (click)="forward('/devicelist')" type="button" class="btn btn-warning mr-1">{{'List' |
                 translate}}
               </button>
             </div>

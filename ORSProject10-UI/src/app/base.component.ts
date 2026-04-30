@@ -116,7 +116,7 @@ export class BaseCtl implements OnInit {
   /**
    * Searhs records 
    */
-    search() {
+      search() {
     console.log("search start")
     var _self = this;
     console.log("Search Form", _self.form.searchParams);
@@ -135,13 +135,14 @@ export class BaseCtl implements OnInit {
         }
         console.log("List Size", _self.form.list.length);
       } else {
-        _self.form.error = false;
+        _self.form.list = [];
+        _self.form.error = true;     // ✅ VERY IMPORTANT
         _self.form.message = res.result.message;
       }
       console.log('FORM', _self.form);
     });
   }
-
+  
   searchOperation(operation: String) {
     console.log("previous/next search start")
     var _self = this;

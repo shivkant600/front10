@@ -44,56 +44,47 @@
   .alertRedColor {
     color: red;
   }
-</style>
-<div class="content-wrapper ">
+</style><div class="content-wrapper ">
   <div class="container-fluid">
     <div class="panel panel-primary" style="padding-top: 10%;">
       <div class="panel-heading">
-        <h1 class="text-primary font-weight-bold">{{ 'Complaint List' | translate }}</h1>
+        <h1 class="text-primary font-weight-bold">{{ 'Device List' | translate }}</h1>
       </div>
 
       <div class="row search-inputs p-1 justify-content-center g-3">
-        
-        <!-- <div class="col-sm-2">
-          <input type="text" name="issueType" [(ngModel)]="form.searchParams.issueType" class="form-control"
-            placeholder="{{ 'Enter issueType' | translate }}">
-        </div> -->
-
 
 
         <div class="col-sm-2">
-          <input type="date" name="createdDate" [(ngModel)]="form.searchParams.createdDate" class="form-control"
-            placeholder="{{ 'Enter createdDate' | translate }}">
+          <input type="text" name="deviceCode" [(ngModel)]="form.searchParams.deviceCode" class="form-control"
+            placeholder="{{ 'Enter deviceCode' | translate }}"> 
         </div>
 
 
-        <div class="col-sm-2">
-          <select class="form-control" name="status" [(ngModel)]="form.searchParams.status" style="cursor: pointer;">
+          <div class="col-sm-2">
+          <input type="text" name="deviceName" [(ngModel)]="form.searchParams.deviceName" class="form-control"
+            placeholder="{{ 'Enter deviceName' | translate }}"> 
+        </div>
+
+
+
+ <div class="col-sm-2">
+          <select class="form-control" name="status"  [(ngModel)]="form.searchParams.status" style="cursor: pointer;">
             <option [ngValue]="" value="undefined">{{'select status ' | translate }}</option>
             <option value="active">{{'active' | translate }} </option>
             <option value="inactive">{{'inactive' | translate }} </option>
+            
+
           </select>
         </div>
 
 
-
-        <div class="col-sm-2">
-                    <select class="form-control" name="issueType" [(ngModel)]="form.searchParams.id" aria-label="ngSelected">
-                      <option [ngValue]="" value="undefined">{{' Select issueType' | translate }}</option>
-                      <option *ngFor="let obj of form.preload.ComplaintList" [value]="obj.key">{{obj.value}}</option>
-                    </select>
-                  </div>
-
-
-
-                  
         <div class="col-sm-1">
           <button (click)="submit()" class="btn btn-primary w-100">{{ 'Search' | translate }}</button>
         </div>
 
         <div>
-          <button (click)="forward('/complaint')" type="button" class="btn btn-success w-100">
-            {{ 'Add Complaint' | translate }}
+          <button (click)="forward('/device')" type="button" class="btn btn-success w-100">
+            {{ 'Add Device' | translate }}
           </button>
         </div>
 
@@ -120,9 +111,11 @@
               <th><input type="checkbox" [(ngModel)]="isMasterSel" name="list_name"
                   (change)="checkUncheckAll($event)" /></th>
               <th>{{ 'S.No' | translate }}</th>
-              <th>{{ 'issueType' | translate }}</th>
-              <th>{{ 'createdDate ' | translate }}</th>
-              <th>{{ 'status ' | translate }}</th>
+              <th>{{ 'deviceCode' | translate }}</th>
+                <th>{{ 'deviceName ' | translate }}</th>
+              <th>{{ 'userName ' | translate }}</th>
+                <th>{{ 'status ' | translate }}</th>
+              
               <th>{{ 'Edit' | translate }}</th>
             </tr>
           </thead>
@@ -130,13 +123,14 @@
             <tr *ngFor="let m of form.list; let i = index" align="center">
               <td><input type="checkbox" #checkboxes (change)="checklistUpdate()" name="list_name" [id]="m.id" /></td>
               <td>{{ (form.pageNo * 5) + i + 1 }}</td>
-              <td>{{ m.issueType }}</td>
-              <td>{{ m.createdDate |date:'yyyy-MM-dd' }}</td>
+              <td>{{ m.deviceCode }}</td>
+               <td>{{ m.deviceName }}</td>
+              <td>{{ m.userName  }}</td>
               <td>{{ m.status }}</td>
-
-
+              
+              
               <td>
-                <button class="fa fa-edit text-primary" id="nnn" (click)="forward('/complaint/' + m.id)">
+                <button class="fa fa-edit text-primary" id="nnn" (click)="forward('/device/' + m.id)">
                 </button>
               </td>
             </tr>
@@ -148,13 +142,13 @@
             }}</button>
 
           <div>
-            <a class="btn btn-warning mr-1" [routerLink]="['/complaintlist']" (click)="exit()">
+            <a class="btn btn-warning mr-1" [routerLink]="['/devicelist']" (click)="exit()">
               {{ 'Reset' | translate }}
             </a>
           </div>
 
           <div *ngIf="form.list.length == 0">
-            <a class="btn btn-warning mr-1" [routerLink]="['/complaintlist']" (click)="exit()">
+            <a class="btn btn-warning mr-1" [routerLink]="['/devicelist']" (click)="exit()">
               {{ 'Back' | translate }}
             </a>
           </div>

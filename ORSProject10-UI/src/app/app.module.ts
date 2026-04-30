@@ -89,6 +89,8 @@ import { PasswordComponent } from './password/password.component';
 import { PasswodlistComponent } from './password/passwodlist.component';
 import { ComplaintComponent } from './complaint/complaint.component';
 import { ComplaintlistComponent } from './complaint/complaintlist.component';
+import { DeviceComponent } from './device/device.component';
+import { DevicelistComponent } from './device/devicelist/devicelist.component';
 
 
 
@@ -180,6 +182,8 @@ export function myHttpLoader(http: HttpClient) {
     PasswodlistComponent,
     ComplaintComponent,
     ComplaintlistComponent,
+    DeviceComponent,
+    DevicelistComponent,
   
  
 
