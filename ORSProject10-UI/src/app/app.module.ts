@@ -91,6 +91,8 @@ import { ComplaintComponent } from './complaint/complaint.component';
 import { ComplaintlistComponent } from './complaint/complaintlist.component';
 import { DeviceComponent } from './device/device.component';
 import { DevicelistComponent } from './device/devicelist/devicelist.component';
+import { BatchComponent } from './batch/batch.component';
+import { BatchlistComponent } from './batch/batchlist.component';
 
 
 
@@ -184,6 +186,8 @@ export function myHttpLoader(http: HttpClient) {
     ComplaintlistComponent,
     DeviceComponent,
     DevicelistComponent,
+    BatchComponent,
+    BatchlistComponent,
   
  
 

@@ -39,6 +39,7 @@ public PASSWORD = this.SERVER_URL + "/Password"
 public COMPLAINT = this.SERVER_URL + "/Complaint"
 
 public DEVICE = this.SERVER_URL + "/Device"
+public BATCH = this.SERVER_URL + "/Batch"
 
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
