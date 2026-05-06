@@ -40,6 +40,8 @@ public COMPLAINT = this.SERVER_URL + "/Complaint"
 
 public DEVICE = this.SERVER_URL + "/Device"
 public BATCH = this.SERVER_URL + "/Batch"
+public SCHEDULER = this.SERVER_URL + "/Scheduler"
+public LOGINHISTROY = this.SERVER_URL + "/Loginhistory"
 
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";

@@ -21,8 +21,8 @@ background-size: cover;width:auto;
       <div class="card-body shadow-lg grad">
         <form>
           <h2 *ngIf="!form.data.id>0" class="text-primary font-weight-bold" style="text-align: center;">{{'Add
-            Batch' | translate}}</h2>
-          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold"  style="text-align: center;">{{'Update Batch' | translate}}</h2>
+            LoginHistory' | translate}}</h2>
+          <h2 *ngIf="form.data.id>0" class="text-primary font-weight-bold"  style="text-align: center;">{{'Update LoginHistory' | translate}}</h2>
           <div *ngIf="form.error && form.message != null" class="alert alert-danger alert-dismissible">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
             {{form.message}}
@@ -34,18 +34,18 @@ background-size: cover;width:auto;
 
 
           <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' batchCode' | translate}}</b>
+            <span class="pt-2"><b>{{' historyCode' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="batchCode" [(ngModel)]="form.data.batchCode" class="form-control"
-                  placeholder="{{'Enter  batchCode' | translate}}">
+                <input type="text" name="historyCode" [(ngModel)]="form.data.historyCode" class="form-control"
+                  placeholder="{{'Enter  historyCode' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor" style=" color: red"> {{form.inputerror.batchCode}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.historyCode}} </span>
           </div>
 
 
@@ -53,37 +53,25 @@ background-size: cover;width:auto;
 
 
            <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' batchName' | translate}}</b>
+            <span class="pt-2"><b>{{' userName' | translate}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
                 </div>
-                <input type="text" name="batchName" [(ngModel)]="form.data.batchName" class="form-control"
-                  placeholder="{{'Enter  batchName' | translate}}">
+                <input type="text" name="userName" [(ngModel)]="form.data.userName" class="form-control"
+                  placeholder="{{'Enter  userName' | translate}}">
               </div>
             </div>
-            <span class="alertRedColor" style=" color: red"> {{form.inputerror.batchName}} </span>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.userName}} </span>
           </div>
 
 
 
 
-           <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' totalRecord' | translate}}</b>
-              <span class="required-field"></span></span>
-            <div class="col-sm-12">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
-                </div>
-                <input type="text" name="totalRecord" [(ngModel)]="form.data.totalRecord" class="form-control"
-                  placeholder="{{'Enter  totalRecord' | translate}}">
-              </div>
-            </div>
-            <span class="alertRedColor" style=" color: red"> {{form.inputerror.totalRecord}} </span>
-          </div>
+
+
 
 
 
@@ -91,6 +79,34 @@ background-size: cover;width:auto;
 
 
           <div style="padding-top:3%">
+            <span class="pt-2"><b>{{'loginTime' | translate}}</b>
+              <span class="required-field"></span></span>
+            <div class="col-sm-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fa fa-bars grey-text"></i> </div>
+                </div>
+                <input type="date" name="loginTime" [value]="form.data.loginTime | date:'yyyy-MM-dd'"
+                  (input)="form.data.loginTime=parseDate($event.target.value)" class="form-control"
+                  placeholder="{{'Enter Total loginTime' | translate}}">
+              </div>
+            </div>
+            <span class="alertRedColor" style=" color: red"> {{form.inputerror.loginTime}} </span>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <div style="padding-top:3%">
             <span class="pt-2"><b>{{'status'}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
@@ -113,6 +129,7 @@ background-size: cover;width:auto;
 
 
 
+
           
          
 
@@ -127,7 +144,7 @@ background-size: cover;width:auto;
                 {{'Update' | translate}}</button>
             </div>
             <div class="pt-2">
-              <button (click)="forward('/batchlist')" type="button" class="btn btn-warning mr-1">{{'List' |
+              <button (click)="forward('/loginhistorylist')" type="button" class="btn btn-warning mr-1">{{'List' |
                 translate}}
               </button>
             </div>

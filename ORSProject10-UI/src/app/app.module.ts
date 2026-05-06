@@ -93,6 +93,10 @@ import { DeviceComponent } from './device/device.component';
 import { DevicelistComponent } from './device/devicelist/devicelist.component';
 import { BatchComponent } from './batch/batch.component';
 import { BatchlistComponent } from './batch/batchlist.component';
+import { SchedulerComponent } from './scheduler/scheduler.component';
+import { SchedulerlistComponent } from './scheduler/schedulerlist.component';
+import { LoginhistoryComponent } from './loginhistory/loginhistory.component';
+import { LoginhistroylistComponent } from './loginhistory/loginhistroylist.component';
 
 
 
@@ -188,6 +192,10 @@ export function myHttpLoader(http: HttpClient) {
     DevicelistComponent,
     BatchComponent,
     BatchlistComponent,
+    SchedulerComponent,
+    SchedulerlistComponent,
+    LoginhistoryComponent,
+    LoginhistroylistComponent,
   
  
 
