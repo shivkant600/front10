@@ -662,6 +662,26 @@
 
 
 
+           <!-- 
+            =================================== transport =========================================== -->
+<li class="nav-item dropdown" style="padding-left: 5px">
+        <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <font style="color: white">{{"Transport" | translate }}</font>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/transport']"><i class="fa fa-user"></i> &nbsp;
+            {{ "add transport" | translate }}</a>
+          <a class="dropdown-item" [routerLink]="['/transportlist']"><i class="fa fa-list"></i> &nbsp;
+            {{ "transport list" | translate }}
+          </a>
+        </div>
+        </li>  
+
+
+
+
+
 
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"

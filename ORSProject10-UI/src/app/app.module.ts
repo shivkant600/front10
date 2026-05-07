@@ -97,6 +97,8 @@ import { SchedulerComponent } from './scheduler/scheduler.component';
 import { SchedulerlistComponent } from './scheduler/schedulerlist.component';
 import { LoginhistoryComponent } from './loginhistory/loginhistory.component';
 import { LoginhistroylistComponent } from './loginhistory/loginhistroylist.component';
+import { TransportComponent } from './transport/transport.component';
+import { TransportlistComponent } from './transport/transportlist.component';
 
 
 
@@ -196,6 +198,8 @@ export function myHttpLoader(http: HttpClient) {
     SchedulerlistComponent,
     LoginhistoryComponent,
     LoginhistroylistComponent,
+    TransportComponent,
+    TransportlistComponent,
   
  
 

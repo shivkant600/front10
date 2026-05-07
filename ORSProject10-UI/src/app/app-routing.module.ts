@@ -79,6 +79,8 @@ import { SchedulerComponent } from './scheduler/scheduler.component';
 import { SchedulerlistComponent } from './scheduler/schedulerlist.component';
 import { LoginhistoryComponent } from './loginhistory/loginhistory.component';
 import { LoginhistroylistComponent } from './loginhistory/loginhistroylist.component';
+import { TransportComponent } from './transport/transport.component';
+import { TransportlistComponent } from './transport/transportlist.component';
 
 
 const routes: Routes = [
@@ -608,6 +610,22 @@ const routes: Routes = [
  {
         path: 'loginhistory/:id',
         component: LoginhistoryComponent
+    },
+
+
+
+
+     {
+        path: 'transport',
+        component: TransportComponent
+    },
+ {
+        path: 'transportlist',
+        component: TransportlistComponent
+    },
+ {
+        path: 'transport/:id',
+        component: TransportComponent
     },
 
 

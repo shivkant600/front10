@@ -42,7 +42,7 @@ public DEVICE = this.SERVER_URL + "/Device"
 public BATCH = this.SERVER_URL + "/Batch"
 public SCHEDULER = this.SERVER_URL + "/Scheduler"
 public LOGINHISTROY = this.SERVER_URL + "/Loginhistory"
-
+public TRANSPORT = this.SERVER_URL + "/Transport"
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
 
