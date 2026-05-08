@@ -81,6 +81,8 @@ import { LoginhistoryComponent } from './loginhistory/loginhistory.component';
 import { LoginhistroylistComponent } from './loginhistory/loginhistroylist.component';
 import { TransportComponent } from './transport/transport.component';
 import { TransportlistComponent } from './transport/transportlist.component';
+import { VerificationComponent } from './verification/verification.component';
+import { VerificationlistComponent } from './verification/verificationlist.component';
 
 
 const routes: Routes = [
@@ -282,15 +284,15 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'alert',
         component: AlertComponent
     },
- {
+    {
         path: 'alertlist',
         component: AlertlistComponent
     },
- {
+    {
         path: 'alert/:id',
         component: AlertComponent
     },
@@ -302,40 +304,40 @@ const routes: Routes = [
         path: 'order',
         component: OrderComponent
     },
- {
+    {
         path: 'orderlist',
         component: OrderlistComponent
     },
- {
+    {
         path: 'order/:id',
         component: OrderComponent
     },
 
 
 
-     {
+    {
         path: 'policy',
         component: PolicyComponent
     },
- {
+    {
         path: 'policylist',
         component: PolicylistComponent
     },
- {
+    {
         path: 'policy/:id',
         component: PolicyComponent
     },
 
 
-      {
+    {
         path: 'sponsor',
         component: SponsorComponent
     },
- {
+    {
         path: 'sponsorlist',
         component: SponsorlistComponent
     },
- {
+    {
         path: 'sponsor/:id',
         component: SponsorComponent
     },
@@ -343,31 +345,31 @@ const routes: Routes = [
 
 
 
-    
-      {
+
+    {
         path: 'parking',
         component: ParkingComponent
     },
- {
+    {
         path: 'parkinglist',
         component: ParkinglistComponent
     },
- {
+    {
         path: 'parking/:id',
         component: ParkingComponent
     },
 
 
 
-      {
+    {
         path: 'plan',
         component: PlanComponent
     },
- {
+    {
         path: 'planlist',
         component: PlanlistComponent
     },
- {
+    {
         path: 'plan/:id',
         component: PlanComponent
     },
@@ -375,15 +377,15 @@ const routes: Routes = [
 
 
 
-      {
+    {
         path: 'state',
         component: StateComponent
     },
- {
+    {
         path: 'statelist',
         component: StatelistComponent
     },
- {
+    {
         path: 'state/:id',
         component: StateComponent
     },
@@ -391,44 +393,44 @@ const routes: Routes = [
 
 
 
-      {
+    {
         path: 'health',
         component: HealthComponent
     },
- {
+    {
         path: 'healthlist',
         component: HeathlistComponent
     },
- {
+    {
         path: 'health/:id',
         component: HealthComponent
     },
 
 
-       {
+    {
         path: 'location',
         component: LocationComponent
     },
- {
+    {
         path: 'locationlist',
         component: LocationlistComponent
     },
- {
+    {
         path: 'location/:id',
         component: LocationComponent
     },
 
 
 
-      {
+    {
         path: 'payment',
         component: PaymentComponent
     },
- {
+    {
         path: 'paymentlist',
         component: PaymentlistComponent
     },
- {
+    {
         path: 'payment/:id',
         component: PaymentComponent
     },
@@ -436,30 +438,30 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'credential',
         component: CredentialComponent
     },
- {
+    {
         path: 'credentiallist',
         component: CredentiallistComponent
     },
- {
+    {
         path: 'credential/:id',
         component: CredentialComponent
     },
 
 
 
-     {
+    {
         path: 'masking',
         component: MaskingComponent
     },
- {
+    {
         path: 'maskinglist',
         component: MaskinglistComponent
     },
- {
+    {
         path: 'masking/:id',
         component: MaskingComponent
     },
@@ -467,15 +469,15 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'data',
         component: DataComponent
     },
- {
+    {
         path: 'datalist',
         component: DatalistComponent
     },
- {
+    {
         path: 'data/:id',
         component: DataComponent
     },
@@ -483,30 +485,30 @@ const routes: Routes = [
 
 
 
-      {
+    {
         path: 'access',
         component: AccessComponent
     },
- {
+    {
         path: 'accesslist',
         component: AccesslistComponent
     },
- {
+    {
         path: 'access/:id',
         component: AccessComponent
     },
 
 
 
-     {
+    {
         path: 'feature',
         component: FeatureComponent
     },
- {
+    {
         path: 'featurelist',
         component: FeaturelistComponent
     },
- {
+    {
         path: 'feature/:id',
         component: FeatureComponent
     },
@@ -514,15 +516,15 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'password',
         component: PasswordComponent
     },
- {
+    {
         path: 'passwordlist',
         component: PasswodlistComponent
     },
- {
+    {
         path: 'password/:id',
         component: PasswordComponent
     },
@@ -531,15 +533,15 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'complaint',
         component: ComplaintComponent
     },
- {
+    {
         path: 'complaintlist',
         component: ComplaintlistComponent
     },
- {
+    {
         path: 'complaint/:id',
         component: ComplaintComponent
     },
@@ -549,16 +551,16 @@ const routes: Routes = [
 
 
 
-    
-     {
+
+    {
         path: 'device',
         component: DeviceComponent
     },
- {
+    {
         path: 'devicelist',
         component: DevicelistComponent
     },
- {
+    {
         path: 'device/:id',
         component: DeviceComponent
     },
@@ -566,15 +568,15 @@ const routes: Routes = [
 
 
 
-       {
+    {
         path: 'batch',
         component: BatchComponent
     },
- {
+    {
         path: 'batchlist',
         component: BatchlistComponent
     },
- {
+    {
         path: 'batch/:id',
         component: BatchComponent
     },
@@ -582,15 +584,15 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'scheduler',
         component: SchedulerComponent
     },
- {
+    {
         path: 'schedulerlist',
         component: SchedulerlistComponent
     },
- {
+    {
         path: 'scheduler/:id',
         component: SchedulerComponent
     },
@@ -599,15 +601,15 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'loginhistory',
         component: LoginhistoryComponent
     },
- {
+    {
         path: 'loginhistorylist',
         component: LoginhistroylistComponent
     },
- {
+    {
         path: 'loginhistory/:id',
         component: LoginhistoryComponent
     },
@@ -615,21 +617,36 @@ const routes: Routes = [
 
 
 
-     {
+    {
         path: 'transport',
         component: TransportComponent
     },
- {
+    {
         path: 'transportlist',
         component: TransportlistComponent
     },
- {
+    {
         path: 'transport/:id',
         component: TransportComponent
     },
 
 
 
+
+
+
+    {
+        path: 'verification',
+        component: VerificationComponent
+    },
+    {
+        path: 'verificationlist',
+        component: VerificationlistComponent
+    },
+    {
+        path: 'verification/:id',
+        component: VerificationComponent
+    },
 
 
 

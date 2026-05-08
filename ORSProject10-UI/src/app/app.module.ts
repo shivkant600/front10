@@ -99,6 +99,8 @@ import { LoginhistoryComponent } from './loginhistory/loginhistory.component';
 import { LoginhistroylistComponent } from './loginhistory/loginhistroylist.component';
 import { TransportComponent } from './transport/transport.component';
 import { TransportlistComponent } from './transport/transportlist.component';
+import { VerificationComponent } from './verification/verification.component';
+import { VerificationlistComponent } from './verification/verificationlist.component';
 
 
 
@@ -200,6 +202,8 @@ export function myHttpLoader(http: HttpClient) {
     LoginhistroylistComponent,
     TransportComponent,
     TransportlistComponent,
+    VerificationComponent,
+    VerificationlistComponent,
   
  
 

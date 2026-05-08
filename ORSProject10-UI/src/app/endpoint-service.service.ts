@@ -43,6 +43,9 @@ public BATCH = this.SERVER_URL + "/Batch"
 public SCHEDULER = this.SERVER_URL + "/Scheduler"
 public LOGINHISTROY = this.SERVER_URL + "/Loginhistory"
 public TRANSPORT = this.SERVER_URL + "/Transport"
+public VERIFICATION = this.SERVER_URL + "/Verification"
+
+
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
 

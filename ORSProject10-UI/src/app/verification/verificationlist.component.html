@@ -24,7 +24,7 @@
   }
 
   .content-wrapper {
-    background: url('assets/files/96013.jpg') no-repeat center center;
+    background: url('assets/files/teahu.png') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     width: auto;
@@ -44,28 +44,36 @@
   .alertRedColor {
     color: red;
   }
-</style>
-<div class="content-wrapper ">
+</style><div class="content-wrapper ">
   <div class="container-fluid">
     <div class="panel panel-primary" style="padding-top: 10%;">
       <div class="panel-heading">
-        <h1 class="text-primary font-weight-bold">{{ 'Transport List' | translate }}</h1>
+        <h1 class="text-primary font-weight-bold">{{ 'Verification List' | translate }}</h1>
       </div>
 
       <div class="row search-inputs p-1 justify-content-center g-3">
         <div class="col-sm-2">
-          <input type="text" name="vehicleType" [(ngModel)]="form.searchParams.vehicleType" class="form-control"
-            placeholder="{{ 'Enter vehicleType' | translate }}">
+          <input type="text" name="userName" [(ngModel)]="form.searchParams.userName" class="form-control"
+            placeholder="{{ 'Enter userName' | translate }}"> 
         </div>
 
 
 
-        <div class="col-sm-2">
-          <input type="text" name="driverName" [(ngModel)]="form.searchParams.driverName" class="form-control"
-            placeholder="{{ 'Enter driverName' | translate }}">
+          <div class="col-sm-2">
+          <input type="text" name="type" [(ngModel)]="form.searchParams.type" class="form-control"
+            placeholder="{{ 'Enter type' | translate }}"> 
         </div>
 
 
+ <div class="col-sm-2">
+          <select class="form-control" name="status"  [(ngModel)]="form.searchParams.status" style="cursor: pointer;">
+            <option [ngValue]="" value="undefined">{{'select status ' | translate }}</option>
+            <option value="active">{{'active' | translate }} </option>
+            <option value="inactive">{{'inactive' | translate }} </option>
+            
+
+          </select>
+        </div>
 
 
         <div class="col-sm-1">
@@ -73,8 +81,8 @@
         </div>
 
         <div>
-          <button (click)="forward('/transport')" type="button" class="btn btn-success w-100">
-            {{ 'Add transport' | translate }}
+          <button (click)="forward('/verification')" type="button" class="btn btn-success w-100">
+            {{ 'Add verification' | translate }}
           </button>
         </div>
 
@@ -95,16 +103,17 @@
       </div>
 
       <div class="table-responsive">
-        <table class="table table-bordered table-hover font-weight-bold text-white  ">
-          <thead class="thead-transparent text-uppercase ">
+        <table class="table table-bordered table-hover table-dark  ">
+          <thead class="thead-dark text-uppercase ">
             <tr align="center">
               <th><input type="checkbox" [(ngModel)]="isMasterSel" name="list_name"
                   (change)="checkUncheckAll($event)" /></th>
               <th>{{ 'S.No' | translate }}</th>
-              <th>{{ 'vehicleType' | translate }}</th>
-              <th>{{ 'driverName ' | translate }}</th>
-              <th>{{ 'charges ' | translate }}</th>
-
+              <th>{{ 'VerificationCode' | translate }}</th>
+                <th>{{ 'userName ' | translate }}</th>
+              <th>{{ 'type ' | translate }}</th>
+                <th>{{ 'status ' | translate }}</th>
+              
               <th>{{ 'Edit' | translate }}</th>
             </tr>
           </thead>
@@ -112,13 +121,14 @@
             <tr *ngFor="let m of form.list; let i = index" align="center">
               <td><input type="checkbox" #checkboxes (change)="checklistUpdate()" name="list_name" [id]="m.id" /></td>
               <td>{{ (form.pageNo * 5) + i + 1 }}</td>
-              <td>{{ m.vehicleType }}</td>
-              <td>{{ m.driverName }}</td>
-              <td>{{ m.charges }}</td>
-
-
+              <td>{{ m.code }}</td>
+               <td>{{ m.userName }}</td>
+              <td>{{ m.type }}</td>
+              <td>{{ m.status }}</td>
+              
+              
               <td>
-                <button class="fa fa-edit text-primary" id="nnn" (click)="forward('/transport/' + m.id)">
+                <button class="fa fa-edit text-primary" id="nnn" (click)="forward('/verification/' + m.id)">
                 </button>
               </td>
             </tr>
@@ -130,13 +140,13 @@
             }}</button>
 
           <div>
-            <a class="btn btn-warning mr-1" [routerLink]="['/transportlist']" (click)="exit()">
+            <a class="btn btn-warning mr-1" [routerLink]="['/verificationlist']" (click)="exit()">
               {{ 'Reset' | translate }}
             </a>
           </div>
 
           <div *ngIf="form.list.length == 0">
-            <a class="btn btn-warning mr-1" [routerLink]="['/transportlist']" (click)="exit()">
+            <a class="btn btn-warning mr-1" [routerLink]="['/verificationlist']" (click)="exit()">
               {{ 'Back' | translate }}
             </a>
           </div>
