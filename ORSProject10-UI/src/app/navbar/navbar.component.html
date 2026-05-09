@@ -684,9 +684,9 @@
 
 
 
-
-            <!-- 
-            =================================== verification =========================================== -->
+<!-- 
+            
+            =================================== verification =========================================== 
 <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -697,6 +697,26 @@
             {{ "add verification" | translate }}</a>
           <a class="dropdown-item" [routerLink]="['/verificationlist']"><i class="fa fa-list"></i> &nbsp;
             {{ "verification list" | translate }}
+          </a>
+        </div>
+        </li>   -->
+
+
+
+
+
+           <!-- 
+            ===================================  mobile verification =========================================== -->
+<li class="nav-item dropdown" style="padding-left: 5px">
+        <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <font style="color: white">{{"mobile verification" | translate }}</font>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/mobileverification']"><i class="fa fa-user"></i> &nbsp;
+            {{ "add mobileverification" | translate }}</a>
+          <a class="dropdown-item" [routerLink]="['/mobileverificationlist']"><i class="fa fa-list"></i> &nbsp;
+            {{ "mobileverification list" | translate }}
           </a>
         </div>
         </li>  

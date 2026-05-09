@@ -83,6 +83,8 @@ import { TransportComponent } from './transport/transport.component';
 import { TransportlistComponent } from './transport/transportlist.component';
 import { VerificationComponent } from './verification/verification.component';
 import { VerificationlistComponent } from './verification/verificationlist.component';
+import { MobileverificationComponent } from './mobileverification/mobileverification.component';
+import { MobileverificationlistComponent } from './mobileverification/mobileverificationlist.component';
 
 
 const routes: Routes = [
@@ -646,6 +648,24 @@ const routes: Routes = [
     {
         path: 'verification/:id',
         component: VerificationComponent
+    },
+
+
+
+
+
+    
+    {
+        path: 'mobileverification',
+        component: MobileverificationComponent
+    },
+    {
+        path: 'mobileverificationlist',
+        component: MobileverificationlistComponent
+    },
+    {
+        path: 'mobileverification/:id',
+        component: MobileverificationComponent
     },
 
 
