@@ -103,6 +103,12 @@ import { VerificationComponent } from './verification/verification.component';
 import { VerificationlistComponent } from './verification/verificationlist.component';
 import { MobileverificationComponent } from './mobileverification/mobileverification.component';
 import { MobileverificationlistComponent } from './mobileverification/mobileverificationlist.component';
+import { AccountComponent } from './account/account.component';
+import { AccountlistComponent } from './account/accountlist.component';
+import { GenderComponent } from './gender/gender.component';
+import { GenderlistComponent } from './gender/genderlist.component';
+import { ActivityComponent } from './activity/activity.component';
+import { ActivitylistComponent } from './activity/activitylist.component';
 
 
 
@@ -208,6 +214,12 @@ export function myHttpLoader(http: HttpClient) {
     VerificationlistComponent,
     MobileverificationComponent,
     MobileverificationlistComponent,
+    AccountComponent,
+    AccountlistComponent,
+    GenderComponent,
+    GenderlistComponent,
+    ActivityComponent,
+    ActivitylistComponent,
   
  
 

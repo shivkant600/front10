@@ -85,6 +85,12 @@ import { VerificationComponent } from './verification/verification.component';
 import { VerificationlistComponent } from './verification/verificationlist.component';
 import { MobileverificationComponent } from './mobileverification/mobileverification.component';
 import { MobileverificationlistComponent } from './mobileverification/mobileverificationlist.component';
+import { AccountComponent } from './account/account.component';
+import { AccountlistComponent } from './account/accountlist.component';
+import { GenderComponent } from './gender/gender.component';
+import { GenderlistComponent } from './gender/genderlist.component';
+import { ActivityComponent } from './activity/activity.component';
+import { ActivitylistComponent } from './activity/activitylist.component';
 
 
 const routes: Routes = [
@@ -654,7 +660,7 @@ const routes: Routes = [
 
 
 
-    
+
     {
         path: 'mobileverification',
         component: MobileverificationComponent
@@ -669,6 +675,54 @@ const routes: Routes = [
     },
 
 
+
+
+    {
+        path: 'account',
+        component: AccountComponent
+    },
+    {
+        path: 'accountlist',
+        component: AccountlistComponent
+    },
+    {
+        path: 'account/:id',
+        component: AccountComponent
+    },
+
+
+
+
+    {
+        path: 'gender',
+        component: GenderComponent
+    },
+    {
+        path: 'genderlist',
+        component: GenderlistComponent
+    },
+    {
+        path: 'gender/:id',
+        component: GenderComponent
+    },
+
+
+
+
+
+
+    {
+        path: 'activity',
+        component: ActivityComponent
+    },
+    {
+        path: 'activitylist',
+        component: ActivitylistComponent
+    },
+    {
+        path: 'activity/:id',
+        component: ActivityComponent
+    },
 
 
 

@@ -27,28 +27,27 @@ export class EndpointServiceService {
   public STATE = this.SERVER_URL + "/State";
   public HEALTH = this.SERVER_URL + "/Health";
   public LOCATION = this.SERVER_URL + "/Location";
- public PAYMENT = this.SERVER_URL + "/Payment";
+  public PAYMENT = this.SERVER_URL + "/Payment";
   public CREDENTIAL = this.SERVER_URL + "/Credential";
   public MASKING = this.SERVER_URL + "/Masking";
-public DATA = this.SERVER_URL + "/Data";
-public ACCESS = this.SERVER_URL + "/Access";
-public FEATURE = this.SERVER_URL + "/Feature"
-
-public PASSWORD = this.SERVER_URL + "/Password"
-
-public COMPLAINT = this.SERVER_URL + "/Complaint"
-
-public DEVICE = this.SERVER_URL + "/Device"
-public BATCH = this.SERVER_URL + "/Batch"
-public SCHEDULER = this.SERVER_URL + "/Scheduler"
-public LOGINHISTROY = this.SERVER_URL + "/Loginhistory"
-public TRANSPORT = this.SERVER_URL + "/Transport"
-public VERIFICATION = this.SERVER_URL + "/Verification"
-public MOBILEVERIFICATION = this.SERVER_URL + "/Mobileverification"
+  public DATA = this.SERVER_URL + "/Data";
+  public ACCESS = this.SERVER_URL + "/Access";
+  public FEATURE = this.SERVER_URL + "/Feature"
+  public PASSWORD = this.SERVER_URL + "/Password"
+  public COMPLAINT = this.SERVER_URL + "/Complaint"
+  public DEVICE = this.SERVER_URL + "/Device"
+  public BATCH = this.SERVER_URL + "/Batch"
+  public SCHEDULER = this.SERVER_URL + "/Scheduler"
+  public LOGINHISTROY = this.SERVER_URL + "/Loginhistory"
+  public TRANSPORT = this.SERVER_URL + "/Transport"
+  public VERIFICATION = this.SERVER_URL + "/Verification"
+  public MOBILEVERIFICATION = this.SERVER_URL + "/Mobileverification"
+  public ACCOUNT = this.SERVER_URL + "/Account"
+  public ACTIVITY = this.SERVER_URL + "/Activity"
+   public GENDER = this.SERVER_URL + "/Gender"
 
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
-
   public CUSTOMER = this.SERVER_URL + "/Customer";
 
 
