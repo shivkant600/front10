@@ -46,6 +46,11 @@ export class EndpointServiceService {
   public ACTIVITY = this.SERVER_URL + "/Activity"
    public GENDER = this.SERVER_URL + "/Gender"
 
+ public CHAT = this.SERVER_URL + "/Chat"
+
+
+
+   public SMARTPARKING = this.SERVER_URL + "/Smartparking"
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
   public CUSTOMER = this.SERVER_URL + "/Customer";

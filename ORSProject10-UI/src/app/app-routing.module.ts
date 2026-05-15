@@ -91,6 +91,11 @@ import { GenderComponent } from './gender/gender.component';
 import { GenderlistComponent } from './gender/genderlist.component';
 import { ActivityComponent } from './activity/activity.component';
 import { ActivitylistComponent } from './activity/activitylist.component';
+import { SmartparkingComponent } from './smartparking/smartparking.component';
+import { SmartparkinglistComponent } from './smartparking/smartparkinglist.component';
+import { ChatComponent } from './chat/chat.component';
+import { ChatlistComponent } from './chat/chatlist.component';
+
 
 
 const routes: Routes = [
@@ -723,6 +728,41 @@ const routes: Routes = [
         path: 'activity/:id',
         component: ActivityComponent
     },
+
+
+
+
+
+    
+    {
+        path: 'smartparking',
+        component: SmartparkingComponent
+    },
+    {
+        path: 'smartparkinglist',
+        component: SmartparkinglistComponent
+    },
+    {
+        path: 'smartparking/:id',
+        component: SmartparkingComponent
+    },
+
+
+
+      
+    {
+        path: 'chatroom',
+        component: ChatComponent
+    },
+    {
+        path: 'chatroomlist',
+        component: ChatlistComponent
+    },
+    {
+        path: 'chatroom/:id',
+        component: ChatComponent
+    },
+
 
 
 

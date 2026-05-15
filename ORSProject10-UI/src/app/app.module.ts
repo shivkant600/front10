@@ -109,6 +109,13 @@ import { GenderComponent } from './gender/gender.component';
 import { GenderlistComponent } from './gender/genderlist.component';
 import { ActivityComponent } from './activity/activity.component';
 import { ActivitylistComponent } from './activity/activitylist.component';
+import { SmartparkingComponent } from './smartparking/smartparking.component';
+import { SmartparkinglistComponent } from './smartparking/smartparkinglist.component';
+import { GamingComponent } from './gaming/gaming.component';
+import { GaminglistComponent } from './gaming/gaminglist.component';
+
+import { ChatComponent } from './chat/chat.component';
+import { ChatlistComponent } from './chat/chatlist.component';
 
 
 
@@ -220,6 +227,13 @@ export function myHttpLoader(http: HttpClient) {
     GenderlistComponent,
     ActivityComponent,
     ActivitylistComponent,
+    SmartparkingComponent,
+    SmartparkinglistComponent,
+    GamingComponent,
+    GaminglistComponent,
+  
+    ChatComponent,
+    ChatlistComponent,
   
  
 
