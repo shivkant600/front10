@@ -95,6 +95,12 @@ import { SmartparkingComponent } from './smartparking/smartparking.component';
 import { SmartparkinglistComponent } from './smartparking/smartparkinglist.component';
 import { ChatComponent } from './chat/chat.component';
 import { ChatlistComponent } from './chat/chatlist.component';
+import { CybersecurityComponent } from './cybersecurity/cybersecurity.component';
+import { CybersecuritylistComponent } from './cybersecurity/cybersecuritylist.component';
+import { MovieComponent } from './movie/movie.component';
+import { MovielistComponent } from './movie/movielist.component';
+import { CarComponent } from './car/car.component';
+import { CarlistComponent } from './car/carlist/carlist.component';
 
 
 
@@ -733,7 +739,7 @@ const routes: Routes = [
 
 
 
-    
+
     {
         path: 'smartparking',
         component: SmartparkingComponent
@@ -749,7 +755,7 @@ const routes: Routes = [
 
 
 
-      
+
     {
         path: 'chatroom',
         component: ChatComponent
@@ -763,6 +769,72 @@ const routes: Routes = [
         component: ChatComponent
     },
 
+
+
+
+
+    {
+        path: 'cybersecurity',
+        component: CybersecurityComponent
+    },
+    {
+        path: 'cybersecuritylist',
+        component: CybersecuritylistComponent
+    },
+    {
+        path: 'cybersecurity/:id',
+        component: CybersecurityComponent
+    },
+
+
+
+
+    
+    {
+        path: 'movie',
+        component: MovieComponent
+    },
+    {
+        path: 'movielist',
+        component: MovielistComponent
+    },
+    {
+        path: 'movie/:id',
+        component: MovieComponent
+    },
+
+
+
+      {
+        path: 'car',
+        component: CarComponent
+    },
+    {
+        path: 'carlist',
+        component: CarlistComponent
+    },
+    {
+        path: 'car/:id',
+        component: CarComponent
+    },
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+    
+    
 
 
 

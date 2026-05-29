@@ -59,73 +59,73 @@ export class HttpServiceService {
 
 
   get(endpoint, callback) {
-  if (this.isLogout()) {
-    console.log('inside isLogout() return true');
-    return true;
-  }
-
-  return this.httpClient.get(endpoint).subscribe(function (data) {
-    console.log('Data :: ' + data);
-    callback(data);
-
-  }, error => {
-    console.log('ORS Error--', error);
-
-    
-
-    if (error && error.error && error.error.message && error.error.message.length > 0) {
-        this.msg = error.error.message[0];
+    if (this.isLogout()) {
+      console.log('inside isLogout() return true');
+      return true;
     }
 
-    const customError = {
-      status: error.status,
-      message: this.msg
-    };
+    return this.httpClient.get(endpoint).subscribe(function (data) {
+      console.log('Data :: ' + data);
+      callback(data);
 
-    callback(null, customError);
-  });
-}
+    }, error => {
+      console.log('ORS Error--', error);
+
+
+
+      if (error && error.error && error.error.message && error.error.message.length > 0) {
+        this.msg = error.error.message[0];
+      }
+
+      const customError = {
+        status: error.status,
+        message: this.msg
+      };
+
+      callback(null, customError);
+    });
+  }
 
 
   post(endpoint, bean, callback, errorCallback?) {
 
-  if (this.isLogout()) {
-    console.log('inside isLogout return true');
-    return;
-  }
-
-  return this.httpClient.post(endpoint, bean).subscribe(
-
-    (data) => {
-      console.log(data);
-      callback(data);
-    },
-
-    (error) => {
-      console.log('ORS Error--', error);
-
-      
-
-      if (error && error.error && error.error.result && error.error.result.message) {
-       this. msg = error.error.result.message;
-      }
-
-      const errorRes = {
-        success: false,
-        result: {
-          message: this. msg
-        }
-      };
-
-      callback(errorRes);
-
-      if (errorCallback) {
-        errorCallback(error);
-      }
+    if (this.isLogout()) {
+      console.log('inside isLogout return true');
+      return;
     }
 
-  );
-}
+    return this.httpClient.post(endpoint, bean).subscribe(
+
+      (data) => {
+        console.log(data);
+        callback(data);
+      },
+
+      (error) => {
+        console.log('ORS Error--', error);
+
+
+
+        if (error && error.error && error.error.result && error.error.result.message) {
+          this.msg = error.error.result.message;
+        }
+
+        const errorRes = {
+          success: false,
+          result: {
+            message: this.msg
+          }
+        };
+
+        callback(errorRes);
+
+        if (errorCallback) {
+          errorCallback(error);
+        }
+      }
+
+    );
+  }
 
 
 }

@@ -116,6 +116,12 @@ import { GaminglistComponent } from './gaming/gaminglist.component';
 
 import { ChatComponent } from './chat/chat.component';
 import { ChatlistComponent } from './chat/chatlist.component';
+import { CybersecurityComponent } from './cybersecurity/cybersecurity.component';
+import { CybersecuritylistComponent } from './cybersecurity/cybersecuritylist.component';
+import { MovieComponent } from './movie/movie.component';
+import { MovielistComponent } from './movie/movielist.component';
+import { CarComponent } from './car/car.component';
+import { CarlistComponent } from './car/carlist/carlist.component';
 
 
 
@@ -234,6 +240,12 @@ export function myHttpLoader(http: HttpClient) {
   
     ChatComponent,
     ChatlistComponent,
+    CybersecurityComponent,
+    CybersecuritylistComponent,
+    MovieComponent,
+    MovielistComponent,
+    CarComponent,
+    CarlistComponent,
   
  
 

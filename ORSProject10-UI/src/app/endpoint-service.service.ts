@@ -44,13 +44,16 @@ export class EndpointServiceService {
   public MOBILEVERIFICATION = this.SERVER_URL + "/Mobileverification"
   public ACCOUNT = this.SERVER_URL + "/Account"
   public ACTIVITY = this.SERVER_URL + "/Activity"
-   public GENDER = this.SERVER_URL + "/Gender"
+  public GENDER = this.SERVER_URL + "/Gender"
 
- public CHAT = this.SERVER_URL + "/Chat"
+  public CYBERSECURITY = this.SERVER_URL + "/Cyber"
+  public CHAT = this.SERVER_URL + "/Chat"
+  public MOVIE = this.SERVER_URL + "/Movie"
+   public CAR = this.SERVER_URL + "/Car"
 
 
 
-   public SMARTPARKING = this.SERVER_URL + "/Smartparking"
+  public SMARTPARKING = this.SERVER_URL + "/Smartparking"
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
   public CUSTOMER = this.SERVER_URL + "/Customer";
