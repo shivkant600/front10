@@ -101,6 +101,8 @@ import { MovieComponent } from './movie/movie.component';
 import { MovielistComponent } from './movie/movielist.component';
 import { CarComponent } from './car/car.component';
 import { CarlistComponent } from './car/carlist/carlist.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { MobilelistComponent } from './mobile/mobilelist.component';
 
 
 
@@ -518,7 +520,6 @@ const routes: Routes = [
     },
 
 
-
     {
         path: 'feature',
         component: FeatureComponent
@@ -531,9 +532,6 @@ const routes: Routes = [
         path: 'feature/:id',
         component: FeatureComponent
     },
-
-
-
 
     {
         path: 'password',
@@ -549,9 +547,6 @@ const routes: Routes = [
     },
 
 
-
-
-
     {
         path: 'complaint',
         component: ComplaintComponent
@@ -564,13 +559,6 @@ const routes: Routes = [
         path: 'complaint/:id',
         component: ComplaintComponent
     },
-
-
-
-
-
-
-
     {
         path: 'device',
         component: DeviceComponent
@@ -583,10 +571,6 @@ const routes: Routes = [
         path: 'device/:id',
         component: DeviceComponent
     },
-
-
-
-
     {
         path: 'batch',
         component: BatchComponent
@@ -599,10 +583,6 @@ const routes: Routes = [
         path: 'batch/:id',
         component: BatchComponent
     },
-
-
-
-
     {
         path: 'scheduler',
         component: SchedulerComponent
@@ -615,11 +595,6 @@ const routes: Routes = [
         path: 'scheduler/:id',
         component: SchedulerComponent
     },
-
-
-
-
-
     {
         path: 'loginhistory',
         component: LoginhistoryComponent
@@ -632,10 +607,6 @@ const routes: Routes = [
         path: 'loginhistory/:id',
         component: LoginhistoryComponent
     },
-
-
-
-
     {
         path: 'transport',
         component: TransportComponent
@@ -648,12 +619,6 @@ const routes: Routes = [
         path: 'transport/:id',
         component: TransportComponent
     },
-
-
-
-
-
-
     {
         path: 'verification',
         component: VerificationComponent
@@ -666,12 +631,6 @@ const routes: Routes = [
         path: 'verification/:id',
         component: VerificationComponent
     },
-
-
-
-
-
-
     {
         path: 'mobileverification',
         component: MobileverificationComponent
@@ -684,10 +643,6 @@ const routes: Routes = [
         path: 'mobileverification/:id',
         component: MobileverificationComponent
     },
-
-
-
-
     {
         path: 'account',
         component: AccountComponent
@@ -700,10 +655,6 @@ const routes: Routes = [
         path: 'account/:id',
         component: AccountComponent
     },
-
-
-
-
     {
         path: 'gender',
         component: GenderComponent
@@ -716,11 +667,6 @@ const routes: Routes = [
         path: 'gender/:id',
         component: GenderComponent
     },
-
-
-
-
-
 
     {
         path: 'activity',
@@ -735,11 +681,6 @@ const routes: Routes = [
         component: ActivityComponent
     },
 
-
-
-
-
-
     {
         path: 'smartparking',
         component: SmartparkingComponent
@@ -752,9 +693,6 @@ const routes: Routes = [
         path: 'smartparking/:id',
         component: SmartparkingComponent
     },
-
-
-
 
     {
         path: 'chatroom',
@@ -769,10 +707,6 @@ const routes: Routes = [
         component: ChatComponent
     },
 
-
-
-
-
     {
         path: 'cybersecurity',
         component: CybersecurityComponent
@@ -786,10 +720,6 @@ const routes: Routes = [
         component: CybersecurityComponent
     },
 
-
-
-
-    
     {
         path: 'movie',
         component: MovieComponent
@@ -821,20 +751,19 @@ const routes: Routes = [
 
 
 
-
-
-
-    
-    
-
-
-
-
-
-
-
-    
-    
+     
+      {
+        path: 'mobile',
+        component: MobileComponent
+    },
+    {
+        path: 'mobilelist',
+        component: MobilelistComponent
+    },
+    {
+        path: 'mobile/:id',
+        component: MobileComponent
+    },
 
 
 

@@ -122,6 +122,8 @@ import { MovieComponent } from './movie/movie.component';
 import { MovielistComponent } from './movie/movielist.component';
 import { CarComponent } from './car/car.component';
 import { CarlistComponent } from './car/carlist/carlist.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { MobilelistComponent } from './mobile/mobilelist.component';
 
 
 
@@ -246,6 +248,8 @@ export function myHttpLoader(http: HttpClient) {
     MovielistComponent,
     CarComponent,
     CarlistComponent,
+    MobileComponent,
+    MobilelistComponent,
   
  
 
