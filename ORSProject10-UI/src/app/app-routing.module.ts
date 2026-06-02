@@ -103,6 +103,10 @@ import { CarComponent } from './car/car.component';
 import { CarlistComponent } from './car/carlist/carlist.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { MobilelistComponent } from './mobile/mobilelist.component';
+import { HospitalComponent } from './hospital/hospital.component';
+import { HospitallistComponent } from './hospital/hospitallist.component';
+import { PrescriptionComponent } from './prescription/prescription.component';
+import { PrescriptionlistComponent } from './prescription/prescriptionlist.component';
 
 
 
@@ -764,6 +768,40 @@ const routes: Routes = [
         path: 'mobile/:id',
         component: MobileComponent
     },
+
+
+
+    {
+        path: 'hospital',
+        component: HospitalComponent
+    },
+    {
+        path: 'hospitallist',
+        component: HospitallistComponent
+    },
+    {
+        path: 'hospital/:id',
+        component: HospitalComponent
+    },
+
+
+
+
+      {
+        path: 'prescription',
+        component: PrescriptionComponent
+    },
+    {
+        path: 'prescriptionlist',
+        component: PrescriptionlistComponent
+    },
+    {
+        path: 'prescription/:id',
+        component: PrescriptionComponent
+    },
+
+
+
 
 
 

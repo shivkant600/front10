@@ -124,6 +124,10 @@ import { CarComponent } from './car/car.component';
 import { CarlistComponent } from './car/carlist/carlist.component';
 import { MobileComponent } from './mobile/mobile.component';
 import { MobilelistComponent } from './mobile/mobilelist.component';
+import { HospitalComponent } from './hospital/hospital.component';
+import { HospitallistComponent } from './hospital/hospitallist.component';
+import { PrescriptionComponent } from './prescription/prescription.component';
+import { PrescriptionlistComponent } from './prescription/prescriptionlist.component';
 
 
 
@@ -250,6 +254,10 @@ export function myHttpLoader(http: HttpClient) {
     CarlistComponent,
     MobileComponent,
     MobilelistComponent,
+    HospitalComponent,
+    HospitallistComponent,
+    PrescriptionComponent,
+    PrescriptionlistComponent,
   
  
 
