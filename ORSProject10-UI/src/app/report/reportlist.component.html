@@ -59,9 +59,15 @@
 
 
 
-         <div class="col-sm-2">
-          <input type="text" name="remarks" [(ngModel)]="form.searchParams.remarks" class="form-control"
-            placeholder="{{ 'Enter remarks' | translate }}"> 
+       <div class="col-sm-2">
+          <select class="form-control" name="remarks"  [(ngModel)]="form.searchParams.remarks" style="cursor: pointer;">
+            <option [ngValue]="" value="undefined">{{'select remarks ' | translate }}</option>
+            <option value="done">{{'done' | translate }} </option>
+            <option value="pending">{{'pending' | translate }} </option>
+             <option value="good">{{'good' | translate }} </option>
+            
+
+          </select>
         </div>
 
 

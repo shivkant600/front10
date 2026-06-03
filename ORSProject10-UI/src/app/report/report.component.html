@@ -93,16 +93,21 @@ background-size: cover;width:auto;
         
 
 
-            <div style="padding-top:3%">
-            <span class="pt-2"><b>{{' remarks' | translate}}</b>
+           <div style="padding-top:3%">
+            <span class="pt-2"><b>{{'remarks'}}</b>
               <span class="required-field"></span></span>
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-file grey-text"></i> </div>
+                  <div class="input-group-text"><i class="fa fa-bars grey-text"></i> </div>
                 </div>
-                <input type="text" name="remarks" [(ngModel)]="form.data.remarks" class="form-control"
-                  placeholder="{{'Enter  remarks' | translate}}">
+
+                <select class="form-control" name="remarks" [(ngModel)]="form.data.remarks" style="cursor: pointer;">
+                  <option [ngValue]="" value="undefined">{{'select remarks ' | translate }}</option>
+                  <option value="done">{{'done' | translate }} </option>
+                  <option value="pending">{{'pending' | translate }} </option>
+                   <option value="good">{{'good' | translate }} </option>
+                </select>
               </div>
             </div>
             <span class="alertRedColor" style=" color: red"> {{form.inputerror.remarks}} </span>
