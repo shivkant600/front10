@@ -107,6 +107,8 @@ import { HospitalComponent } from './hospital/hospital.component';
 import { HospitallistComponent } from './hospital/hospitallist.component';
 import { PrescriptionComponent } from './prescription/prescription.component';
 import { PrescriptionlistComponent } from './prescription/prescriptionlist.component';
+import { ReportComponent } from './report/report.component';
+import { ReportlistComponent } from './report/reportlist.component';
 
 
 
@@ -800,6 +802,22 @@ const routes: Routes = [
         component: PrescriptionComponent
     },
 
+
+
+
+
+      {
+        path: 'report',
+        component: ReportComponent
+    },
+    {
+        path: 'reportlist',
+        component: ReportlistComponent
+    },
+    {
+        path: 'report/:id',
+        component: ReportComponent
+    },
 
 
 

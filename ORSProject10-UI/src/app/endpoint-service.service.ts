@@ -52,7 +52,8 @@ export class EndpointServiceService {
   public SMARTPARKING = this.SERVER_URL + "/Smartparking"
   public MOBILE = this.SERVER_URL + "/Mobile"
   public HOSPITAL = this.SERVER_URL + "/Hospital"
- public PRESCRIPTION = this.SERVER_URL + "/Prescription"
+  public PRESCRIPTION = this.SERVER_URL + "/Prescription"
+  public REPORT = this.SERVER_URL + "/Report"
 
 
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
