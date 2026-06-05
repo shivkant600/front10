@@ -130,6 +130,8 @@ import { PrescriptionComponent } from './prescription/prescription.component';
 import { PrescriptionlistComponent } from './prescription/prescriptionlist.component';
 import { ReportComponent } from './report/report.component';
 import { ReportlistComponent } from './report/reportlist.component';
+import { InsuranceComponent } from './insurance/insurance.component';
+import { InsurancelistComponent } from './insurance/insurancelist/insurancelist.component';
 
 
 
@@ -262,6 +264,8 @@ export function myHttpLoader(http: HttpClient) {
     PrescriptionlistComponent,
     ReportComponent,
     ReportlistComponent,
+    InsuranceComponent,
+    InsurancelistComponent,
   
  
 

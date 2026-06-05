@@ -109,6 +109,8 @@ import { PrescriptionComponent } from './prescription/prescription.component';
 import { PrescriptionlistComponent } from './prescription/prescriptionlist.component';
 import { ReportComponent } from './report/report.component';
 import { ReportlistComponent } from './report/reportlist.component';
+import { InsuranceComponent } from './insurance/insurance.component';
+import { InsurancelistComponent } from './insurance/insurancelist/insurancelist.component';
 
 
 
@@ -741,7 +743,7 @@ const routes: Routes = [
 
 
 
-      {
+    {
         path: 'car',
         component: CarComponent
     },
@@ -757,8 +759,8 @@ const routes: Routes = [
 
 
 
-     
-      {
+
+    {
         path: 'mobile',
         component: MobileComponent
     },
@@ -789,7 +791,7 @@ const routes: Routes = [
 
 
 
-      {
+    {
         path: 'prescription',
         component: PrescriptionComponent
     },
@@ -806,7 +808,7 @@ const routes: Routes = [
 
 
 
-      {
+    {
         path: 'report',
         component: ReportComponent
     },
@@ -817,6 +819,21 @@ const routes: Routes = [
     {
         path: 'report/:id',
         component: ReportComponent
+    },
+
+
+
+    {
+        path: 'insurance',
+        component: InsuranceComponent
+    },
+    {
+        path: 'insurancelist',
+        component: InsurancelistComponent
+    },
+    {
+        path: 'insurance/:id',
+        component: InsuranceComponent
     },
 
 

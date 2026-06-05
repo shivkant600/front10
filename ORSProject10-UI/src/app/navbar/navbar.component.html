@@ -938,8 +938,8 @@
 
 
          <!-- 
-            ===================================  hospital =========================================== -->
-      <li class="nav-item dropdown" style="padding-left: 5px">
+            ===================================  prescription =========================================== -->
+      <!-- <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <font style="color: white">{{"Prescription" | translate }}</font>
@@ -951,7 +951,7 @@
             {{ "Prescription list" | translate }}
           </a>
         </div>
-      </li>
+      </li> -->
 
 
 
@@ -959,7 +959,7 @@
 
         <!-- 
             ===================================  report =========================================== -->
-      <li class="nav-item dropdown" style="padding-left: 5px">
+      <!-- <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <font style="color: white">{{"Report" | translate }}</font>
@@ -971,8 +971,28 @@
             {{ "Report list" | translate }}
           </a>
         </div>
-      </li>
+      </li> -->
 
+
+
+
+
+
+        <!-- 
+            ===================================  insurance =========================================== -->
+      <li class="nav-item dropdown" style="padding-left: 5px">
+        <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <font style="color: white">{{"Insurance" | translate }}</font>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/insurance']"><i class="fa fa-user"></i> &nbsp;
+            {{ "add Insurance" | translate }}</a>
+          <a class="dropdown-item" [routerLink]="['/insurancelist']"><i class="fa fa-list"></i> &nbsp;
+            {{ "Insurance list" | translate }}
+          </a>
+        </div>
+      </li>
 
 
 

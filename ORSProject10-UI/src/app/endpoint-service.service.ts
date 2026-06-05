@@ -55,6 +55,8 @@ export class EndpointServiceService {
   public PRESCRIPTION = this.SERVER_URL + "/Prescription"
   public REPORT = this.SERVER_URL + "/Report"
 
+  public INSURANCE = this.SERVER_URL + "/Insurance"
+
 
   public TIMETABLE = this.SERVER_URL + "/TimeTable";
   public JASPERREPORT = this.SERVER_URL + "/Jasper";
